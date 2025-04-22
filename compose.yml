@@ -1,0 +1,15 @@
+services:
+  app:
+    build: ./
+    ports:
+      - 7860:7860
+    volumes:
+      - ./outputs:/app/outputs
+      - ./hf_download:/app/hf_download
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
