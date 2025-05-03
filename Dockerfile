@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.10-slim
 
 RUN apt -y update \
   && apt -y install libopencv-dev\
