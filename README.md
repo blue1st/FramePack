@@ -4,7 +4,7 @@
 
 # FramePack
 
-Official implementation and desktop software for ["Packing Input Frame Context in Next-Frame Prediction Models for Video Generation"](https://lllyasviel.github.io/frame_pack_gitpage/).
+Official implementation and desktop software for ["Frame Context Packing and Drift Prevention in Next-Frame-Prediction Video Diffusion Models"](https://lllyasviel.github.io/frame_pack_gitpage/).
 
 Links: [**Paper**](https://arxiv.org/abs/2504.12626), [**Project Page**](https://lllyasviel.github.io/frame_pack_gitpage/)
 
@@ -18,11 +18,15 @@ FramePack can be trained with a much larger batch size, similar to the batch siz
 
 **Video diffusion, but feels like image diffusion.**
 
-# Notes
+# News
+
+**2025 July 14:** Some pure text2video anti-drifting stress-test results of FramePack-P1 are uploaded [here,](https://lllyasviel.github.io/frame_pack_gitpage/p1/#text-to-video-stress-tests) using common prompts without any reference images.
+
+**2025 June 26:** Some results of FramePack-P1 are uploaded [here.](https://lllyasviel.github.io/frame_pack_gitpage/p1) The FramePack-P1 will be the next version of FramePack with two designs: Planned Anti-Drifting and History Discretization.
+
+**2025 May 03:** The FramePack-F1 is released. [Try it here.](https://github.com/lllyasviel/FramePack/discussions/459)
 
 Note that this GitHub repository is the only official FramePack website. We do not have any web services. All other websites are spam and fake, including but not limited to `framepack.co`, `frame_pack.co`, `framepack.net`, `frame_pack.net`, `framepack.ai`, `frame_pack.ai`, `framepack.pro`, `frame_pack.pro`, `framepack.cc`, `frame_pack.cc`,`framepackai.co`, `frame_pack_ai.co`, `framepackai.net`, `frame_pack_ai.net`, `framepackai.pro`, `frame_pack_ai.pro`, `framepackai.cc`, `frame_pack_ai.cc`, and so on. Again, they are all spam and fake. **Do not pay money or download files from any of those websites.**
-
-The team is on leave between April 21 and 30. PR merging will be delayed.
 
 # Requirements
 
@@ -475,7 +479,14 @@ and so on.
 
 # Cite
 
-    @article{zhang2025framepack,
+    @inproceedings{zhang2025framepack,
+        title={Frame Context Packing and Drift Prevention in Next-Frame-Prediction Video Diffusion Models},
+        author={Lvmin Zhang and Shengqu Cai and Muyang Li and Gordon Wetzstein and Maneesh Agrawala},
+        booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+        year={2025},
+    }
+
+    @article{zhang2025framepackv1,
         title={Packing Input Frame Contexts in Next-Frame Prediction Models for Video Generation},
         author={Lvmin Zhang and Maneesh Agrawala},
         journal={Arxiv},
